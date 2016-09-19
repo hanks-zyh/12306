@@ -1,0 +1,15 @@
+{
+  "name": "12306",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hanks",
+  "license": "ISC",
+  "dependencies": {
+    "@reactivex/rxjs": "^5.0.0-beta.12",
+    "rxjs": "^5.0.0-beta.12"
+  }
+}
