@@ -108,7 +108,7 @@ function printInfo(obj) {
   // console.log('\n----------------------\n');
 }
 
-function ggg(myStartStation, myEndStation, myStartDate) {
+function findTheTrain(myStartStation, myEndStation, myStartDate) {
   // 查询城市代码 PDN
   var startCityAlise = getCityAlise(myStartStation);
   var endCityAlise = getCityAlise(myEndStation);
@@ -144,13 +144,7 @@ function ggg(myStartStation, myEndStation, myStartDate) {
                     if (newTrain.train_no == result.train.train_no) {
                       getPrice(newTrain)
                         .then(function (rr) {
-                          // 车次
-                          // 经过的站点
-                          // 起始车站
-                          // 到达车站
-                          // 硬卧座位数、、yw_num
-                          // 价格
-                          // 发车时间-到达时间
+                          // 车次 经过的站点 起始车站 到达车站 硬卧座位数、、yw_num 价格  发车时间-到达时间
                           var ttrain = rr.train;
                           var price = rr.data;
                           var info = {
@@ -199,6 +193,6 @@ function ggg(myStartStation, myEndStation, myStartDate) {
 
 var myStartStation = '平顶山'
 var myEndStation = '北京'
-var myStartDate = '2016-10-02'
+var myStartDate = '2016-10-05'
 
-ggg(myStartStation, myEndStation, myStartDate);
+findTheTrain(myStartStation, myEndStation, myStartDate);
